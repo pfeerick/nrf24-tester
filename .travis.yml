@@ -8,8 +8,12 @@ before_install:
   - sudo mv arduino-1.6.5 /usr/local/share/arduino
   - sudo ln -s /usr/local/share/arduino/arduino /usr/local/bin/arduino
 
-#install:
-#  - ln -s $PWD /usr/local/share/arduino/libraries/Adafruit_FONA
+install:
+  - tar xf libraries.tar libraries/
+  - sudo mv libraries /usr/local/share/arduino/libraries
+  #- ln -s $PWD/DigoleSerial /usr/local/share/arduino/libraries/DigoleSerial
+ # - ln -s $PWD/MAX17043 /usr/local/share/arduino/libraries/MAX17043
+#  - ln -s $PWD/RF24 /usr/local/share/arduino/libraries/RF24
 #  - arduino --install-library "Adafruit SleepyDog Library,Adafruit MQTT Library"
 
 script:
