@@ -12,7 +12,7 @@ install:
   - mkdir $PWD/libraries
   - tar xf libraries.tar  -C $PWD/libraries
   - ls /usr/local/share/arduino/libraries
-  - sudo mv libraries /usr/local/share/arduino/libraries
+  - sudo mv libraries/* /usr/local/share/arduino/libraries
   - ls /usr/local/share/arduino/libraries  
 #  - ln -s $PWD/DigoleSerial /usr/local/share/arduino/libraries/DigoleSerial
 #  - ln -s $PWD/MAX17043 /usr/local/share/arduino/libraries/MAX17043
