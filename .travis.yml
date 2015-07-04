@@ -23,7 +23,6 @@ install:
 script:
   - arduino --verify --board arduino:avr:uno $PWD/nano_nrf_tester.ino
 
-
 #notifications:
 #  email:
 #    on_success: change
