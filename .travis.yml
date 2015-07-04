@@ -15,7 +15,7 @@ before_install:
 install:
   - ls $PWD
   - mkdir $PWD/libraries
-  - tar xf libraries.tar  -C $PWD/libraries
+  - tar xf $PWD/nano_nrf_tester/libraries.tar  -C $PWD/libraries
 #  - ls /usr/local/share/arduino/libraries
   - sudo mv libraries/* /usr/local/share/arduino/libraries
   - ls /usr/local/share/arduino/libraries  
