@@ -9,7 +9,7 @@ before_install:
   - sudo ln -s /usr/local/share/arduino/arduino /usr/local/bin/arduino
 
 install:
-  - tar xf libraries.tar libraries/
+  - tar xf libraries.tar  -C  $PWD/libraries/
   - sudo mv libraries /usr/local/share/arduino/libraries
   #- ln -s $PWD/DigoleSerial /usr/local/share/arduino/libraries/DigoleSerial
  # - ln -s $PWD/MAX17043 /usr/local/share/arduino/libraries/MAX17043
